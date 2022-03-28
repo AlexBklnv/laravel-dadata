@@ -15,7 +15,7 @@ class DaDataServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/dadata.php', 'dadata');
         
-        $this->app->singleton(DaDataAddress::class, fn() => app(DaDataAddressService::class));
+        $this->app->singleton(DaDataAddress::class, fn() => new DaDataAddressService());
         $this->app->singleton(DaDataProfile::class, fn() => new DaDataProfileService());
     }
     
