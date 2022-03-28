@@ -1,0 +1,54 @@
+{
+  "name": "alexbklnv/laravel-dadata",
+  "description": "Laravel DaData API",
+  "type": "project",
+  "keywords": [
+    "alexbklnv",
+    "dadata",
+    "php",
+    "address",
+    "profile",
+    "laravel",
+    "sugggestions"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AlexBklnv\\DaData\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "AlexBklnv",
+      "email": "alexbklnv@yandex.ru"
+    }
+  ],
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AlexBklnv\\DaData\\DaDataServiceProvider"
+      ],
+      "aliases": {
+        "DaDataAddress": "AlexBklnv\\DaData\\Facade\\DaDataAddress",
+        "DaDataProfile": "AlexBklnv\\DaData\\Facade\\DaDataProfile"
+      }
+    }
+  },
+  "require": {
+    "alexbklnv/php-dadata-client": "^0.1.2",
+    "illuminate/support": "^8.83",
+    "illuminate/config": "^8.83",
+    "yzen.dev/plain-to-class": "^0.4.2"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^6.24"
+  }
+}
