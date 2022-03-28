@@ -2,13 +2,15 @@
 
 namespace AlexBklnv\DaData\DTO\Address\Data;
 
+use AlexBklnv\DaData\DTO\AbstractDTO;
+
 /**
  * DTO данных с API: отделения Почты России
  *
  * @package AlexBklnv\Dadata
  * @author AlexBklnv <alexbklnv@yandex.ru>
  */
-class PostalUnitData
+class PostalUnitData extends AbstractDTO
 {
     /**
      * @var null|string Индекс

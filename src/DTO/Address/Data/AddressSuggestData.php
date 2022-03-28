@@ -2,13 +2,15 @@
 
 namespace AlexBklnv\DaData\DTO\Address\Data;
 
+use AlexBklnv\DaData\DTO\AbstractDTO;
+
 /**
  * DTO данных с подсказками
  *
  * @package AlexBklnv\Dadata
  * @author AlexBklnv <alexbklnv@yandex.ru>
  */
-class AddressSuggestData
+class AddressSuggestData extends AbstractDTO
 {
     /**
      * @var null|string Индекс

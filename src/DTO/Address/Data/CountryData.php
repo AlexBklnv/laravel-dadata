@@ -2,12 +2,15 @@
 
 namespace AlexBklnv\DaData\DTO\Address\Data;
 
+use AlexBklnv\DaData\DTO\AbstractDTO;
+
 /**
  * DTO данных для страны
+ *
  * @package AlexBklnv\Dadata
  * @author AlexBklnv <alexbklnv@yandex.ru>
  */
-class CountryData
+class CountryData extends AbstractDTO
 {
     /**
      * @var null|string|int Цифровой код страны
