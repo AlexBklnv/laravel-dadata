@@ -1,7 +1,7 @@
 {
   "name": "alexbklnv/laravel-dadata",
   "description": "Laravel DaData API",
-  "type": "project",
+  "type": "library",
   "keywords": [
     "alexbklnv",
     "dadata",
